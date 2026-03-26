@@ -87,7 +87,8 @@ function getErrorReasonLabel(reason: string | null): string {
 }
 
 function formatDate(date: string): string {
-    return new Date(date + 'T00:00:00').toLocaleDateString('pt-BR')
+    const [year, month, day] = date.split('-').map(Number)
+    return new Date(year, month - 1, day).toLocaleDateString('pt-BR')
 }
 </script>
 

@@ -31,7 +31,7 @@ export const useStudyStore = defineStore('study', {
         weekQuestions: (state) => {
             const now = new Date()
             const weekStart = new Date(now)
-            weekStart.setDate(now.getDate() - now.getDay())
+            weekStart.setDate(now.getDate() - ((now.getDay() + 6) % 7))
             weekStart.setHours(0, 0, 0, 0)
             return state.sessions
                 .filter(s => new Date(s.date) >= weekStart)

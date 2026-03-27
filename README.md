@@ -1,6 +1,8 @@
 # Equilibra Que Dá!
 
-> Rastreador de questões do ENEM para alunos do IFRN – Campus Nova Cruz.
+> Rastreador de performance para estudantes do ENEM.
+
+⚠️ **Nota de Portfólio:** Este repositório é mantido como **privado** por se tratar de um produto de propriedade intelectual em fase de validação de modelo de negócio. Este documento serve como demonstração de arquitetura, padrões de engenharia e decisões técnicas tomadas durante o desenvolvimento desta PWA.
 
 **Equilibra Que Dá!** é uma iniciativa do **Prof. Me. Igor Gacheiro da Silva** (IFRN – Campus Nova Cruz), desenvolvida por **Giovanni Vasconcelos de Medeiros**. A aplicação permite que estudantes acompanhem seu desempenho na resolução de questões do ENEM, registrando sessões de estudo por matéria, visualizando estatísticas detalhadas e identificando os principais motivos de erro — tudo sem necessidade de cadastro ou conexão com servidor externo.
 
@@ -148,7 +150,7 @@ O composable [`composables/useStatistics.ts`](composables/useStatistics.ts) proc
 A primeira experiência do usuário é guiada pelo composable [`composables/useOnboarding.ts`](composables/useOnboarding.ts), que utiliza a biblioteca **driver.js**.
 
 - **Persistência:** O status do tour é controlado pela chave `equilibra-onboarding-completo` no `localStorage`.
-- **Design:** O tour possui estilização customizada (`.equilibra-popover`) para o tema **enemDark**, com background em tom *surface* (`#434343`) e botões na cor *primary* do IFRN.
+- **Design:** O tour possui estilização customizada (`.equilibra-popover`) para o tema **enemDark**, com background em tom *surface* (`#434343`) e botões na cor *primary* baseado nas cores do IFRN.
 - **Tour Manual:** O usuário pode reiniciar o tutorial a qualquer momento através do modal de Configurações.
 
 ---
@@ -169,7 +171,7 @@ Para manter a consistência do projeto, utilizamos o script [`scripts/release.sh
 ## 🗂️ Estrutura do Projeto
 
 ```
-equilibra-que-da-ifrn/
+equilibra-que-da-pwa/
 ├── app.vue                     # Entrada da aplicação Vue e Estilos do Driver.js
 ├── nuxt.config.ts              # Configuração do Nuxt 3 / Nitro (preset: static)
 ├── vercel.json                 # Headers de cache agressivo para o Edge Network
@@ -254,8 +256,8 @@ Na configuração atual (SPA), os middlewares Nitro são relevantes apenas quand
 **1. Clone o repositório:**
 
 ```bash
-git clone https://github.com/vasconcelos-giovanni/equilibra-que-da-ifrn.git
-cd equilibra-que-da-ifrn
+git clone https://github.com/vasconcelos-giovanni/equilibra-que-da-pwa.git
+cd equilibra-que-da-pwa
 ```
 
 **2. Instale as dependências:**
@@ -541,7 +543,7 @@ chmod +x scripts/release.sh
 ## 🗂️ Estrutura do Projeto
 
 ```
-equilibra-que-da-ifrn/
+equilibra-que-da-pwa/
 ├── app.vue                     # Entrada da aplicação Vue
 ├── nuxt.config.ts              # Configuração do Nuxt 3 / Nitro (preset: static)
 ├── vercel.json                 # Headers de cache agressivo para o Edge Network
@@ -591,5 +593,3 @@ equilibra-que-da-ifrn/
 |---|---|
 | Idealização | Prof. Me. Igor Gacheiro da Silva — IFRN Campus Nova Cruz |
 | Desenvolvimento | Giovanni Vasconcelos de Medeiros |
-
-*IFRN – Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte – Campus Nova Cruz.*

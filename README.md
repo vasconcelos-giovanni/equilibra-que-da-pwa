@@ -2,7 +2,7 @@
 
 > Rastreador de performance para estudantes do ENEM.
 
-⚠️ **Nota de Portfólio:** Este repositório é mantido como **privado** por se tratar de um produto de propriedade intelectual em fase de validação de modelo de negócio. Este documento serve como demonstração de arquitetura, padrões de engenharia e decisões técnicas tomadas durante o desenvolvimento desta PWA.
+⚠️ **Nota de Portfólio:** O repositório original é mantido como **privado** por se tratar de um produto de propriedade intelectual em fase de validação de modelo de negócio. Este documento serve como demonstração de arquitetura, padrões de engenharia e decisões técnicas tomadas durante o desenvolvimento desta PWA.
 
 **Equilibra Que Dá!** é uma iniciativa do **Prof. Me. Igor Gacheiro da Silva** (IFRN – Campus Nova Cruz), desenvolvida por **Giovanni Vasconcelos de Medeiros**. A aplicação permite que estudantes acompanhem seu desempenho na resolução de questões do ENEM, registrando sessões de estudo por matéria, visualizando estatísticas detalhadas e identificando os principais motivos de erro — tudo sem necessidade de cadastro ou conexão com servidor externo.
 
